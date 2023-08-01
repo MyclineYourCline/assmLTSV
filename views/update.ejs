@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+<div class="container m-5">
+    <form method="post" action="/update/updateCar/<%= data.id%>" enctype="multipart/form-data" class="container shadow-lg ">
+        <div class="row justify-content-center ">
+            <input type="text" class="row w-50 mt-3 p-2 rounded-1 shadow-lg"  name="ten" placeholder="Ten" value="<%= data.ten%>">
+        </div>
+        <div class="row justify-content-center">
+            <input type="text" class="row w-50 mt-3 p-2 rounded-1 shadow-lg" name="gia" placeholder="Gia" value="<%= data.gia%>">
+        </div>
+        <div class="row justify-content-center">
+            <input type="text" class="row w-50 mt-3 p-2 rounded-1 shadow-lg" name="nam" placeholder="Nam san xuat" value="<%= data.nam%>">
+        </div>
+        <div class="row justify-content-center ">
+            <input type="file" class="row mb-2 w-50 mt-3 p-2 rounded-1 shadow-lg justify-content-center" name="anh" multiple>
+        </div>
+        <div class="row justify-content-center ">
+            <button type="submit" class="btn btn-success w-25 mb-5">update</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
